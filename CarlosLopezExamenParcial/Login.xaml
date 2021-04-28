@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarlosLopezExamenParcial.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="White" CornerRadius="0">
+            <Image Source="logo.png" Aspect="AspectFit" HeightRequest="100" HorizontalOptions="Center"/>
+        </Frame>
+        <Frame BackgroundColor="#2196F3" Padding="0" CornerRadius="0">
+            <Label Text="BIENVENIDO A CURSOS ONLINE" HorizontalTextAlignment="Center" TextColor="White" FontSize="18"/>
+        </Frame>
+        <Frame  BackgroundColor="#2196F3" Padding="0" CornerRadius="0">
+            <Label Text="Ingrese sus datos:" HorizontalTextAlignment="Center" TextColor="White" FontSize="12"/>
+        </Frame>
+        <Entry x:Name="txtUser" Placeholder="Usuario" />
+        <Entry x:Name="txtPass" Placeholder="Contraseña" IsPassword="True"/>
+
+        <Button x:Name="btnRegistro" Text="Ingresar" Clicked="btnRegistro_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

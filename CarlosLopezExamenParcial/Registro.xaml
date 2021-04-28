@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarlosLopezExamenParcial.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="White" CornerRadius="0">
+                <Image Source="logo.png" Aspect="AspectFit" HeightRequest="100" HorizontalOptions="Center"/>
+            </Frame>
+            <Frame BackgroundColor="#2196F3" Padding="0" CornerRadius="0">
+                <Label Text="Registro de Estudiantes" HorizontalTextAlignment="Center" TextColor="White" FontSize="12"/>
+            </Frame>
+
+            <Label x:Name="lblUser" FontSize="Medium" VerticalOptions="Start" TextColor="Black"/>
+            <Label x:Name="lblPass" FontSize="Medium" VerticalOptions="Start" TextColor="Black"/>
+
+            <Entry x:Name="txtNombreUser" Placeholder="Ingrese su nombre: " />
+            <Entry x:Name="txtPagoInicial" Placeholder="Ingrese su pago inicial" />
+            <Label x:Name="lblPagoMensual" FontSize="Medium" VerticalOptions="Start" TextColor="Black" />
+
+
+            <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"/>
+            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
